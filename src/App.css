@@ -1,0 +1,27 @@
+.button{
+    background-color: #2c61ed;
+    color: white;
+    /* padding: 6px; */
+    cursor: pointer;
+}
+.button:hover{
+    background-color: transparent;
+    border: 1px solid #2c61ed;
+    color: #2c61ed;
+    transition: all 0.5s;
+}
+.header{
+    background: linear-gradient(90deg, #1E88E5, #1976D2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+}
+.scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #ffffff66;
+  border-radius: 10px;
+}
+.scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
