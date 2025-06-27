@@ -4,7 +4,7 @@ import { CiClock2 } from "react-icons/ci";
 import { careerJobsData } from "../data/data";
 import { Upload } from "antd";
 import axios from "axios";
-import { handleError } from "../utils/Utils";
+import { handleError, handleSuccess } from "../utils/Utils";
 import { ScaleLoader } from "react-spinners";
 
 const Career = () => {
@@ -37,6 +37,7 @@ const Career = () => {
           },
         }
       );
+      handleSuccess("Form submit successfull");
       setName("");
       setEmail("");
       setRolesApplied("");
