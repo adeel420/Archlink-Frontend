@@ -7,13 +7,17 @@ import Portfolio from "../components/home-subsections/Portfolio";
 
 const Home = () => {
   return (
-    <div className="mt-24 mb-24 ml-6 mr-6 flex flex-col gap-12">
-      <Hero_Section />
-      <Our_Services />
-      <Portfolio />
-      <Testimonals />
-      <Call_To_Action />
-    </div>
+    <>
+      <div className="mt-20 ">
+        <Hero_Section />
+      </div>
+      <div className="mt-24 mb-24 ml-6 mr-6 flex flex-col gap-12">
+        <Our_Services />
+        <Portfolio />
+        <Testimonals />
+        <Call_To_Action />
+      </div>
+    </>
   );
 };
 
