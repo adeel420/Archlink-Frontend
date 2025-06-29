@@ -124,6 +124,12 @@ const Header = () => {
             >
               Contact
             </Link>
+            <Link
+              to="/quote"
+              className="text-decoration-none text-white hover:text-[#d3e2e1]"
+            >
+              Quote
+            </Link>
             {!token ? (
               <>
                 <Link
@@ -203,6 +209,13 @@ const Header = () => {
             className="text-decoration-none block text-[#1976D2]"
           >
             Contact Us
+          </Link>
+          <Link
+            to="/quote"
+            onClick={toggleMobileMenu}
+            className="text-decoration-none block text-[#1976D2]"
+          >
+            Quote
           </Link>
           {!token ? (
             <>

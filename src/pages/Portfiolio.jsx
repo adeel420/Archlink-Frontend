@@ -96,20 +96,10 @@ const Portfiolio = () => {
                     href={data.projectLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#2c61ed] hover:bg-[#1f4edb] transition-all text-white px-4 py-2 rounded-lg text-sm flex items-center justify-center gap-2 shadow cursor-pointer"
+                    className="bg-[#2c61ed] hover:bg-[#1f4edb] transition-all text-white px-4 py-2 rounded-lg text-sm flex items-center justify-center gap-2 shadow cursor-pointer w-full"
                   >
                     <IoMdOpen />
                     Live Project
-                  </a>
-
-                  <a
-                    href={data.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-gray-800 hover:bg-black transition-all text-white px-4 py-2 rounded-lg text-sm flex items-center justify-center gap-2 shadow cursor-pointer"
-                  >
-                    <IoMdOpen />
-                    GitHub Code
                   </a>
                 </div>
               </div>

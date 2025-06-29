@@ -21,6 +21,7 @@ import Verify_Email from "./pages/Verify-Email";
 import Admin_Dashboard from "./pages/Admin_Dashboard";
 import Reset_Password from "./pages/Reset-Password";
 import ScrollToTop from "./components/ScrollToTop";
+import Quote from "./pages/Quote";
 
 function App() {
   const location = useLocation();
@@ -68,6 +69,7 @@ function App() {
         <Route path="/reset-password" element={<Reset_Password />} />
         <Route path="/verify-email" element={<Verify_Email />} />
         <Route path="/dashboard" element={<Admin_Dashboard />} />
+        <Route path="/quote" element={<Quote />} />
       </Routes>
       {!hideFooter && <Footer />}
       <Toaster />
