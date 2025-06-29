@@ -66,6 +66,17 @@ const Quote = () => {
           <ScaleLoader color="#275ce7" />
         </div>
       )}
+
+      {/* Heading */}
+      <div className="text-center space-y-4">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800">
+          Quotation <span className="text-[#2c61ed]">Form</span>
+        </h1>
+        <div className="h-1 w-20 mx-auto bg-[#2c61ed] rounded" />
+        <p className="text-lg sm:text-xl text-gray-600">
+          Fill out the quote form below.
+        </p>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-4 md:px-12 py-16 bg-gray-50">
         {/* Quote Form */}
         <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl transition-all duration-300">

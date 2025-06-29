@@ -130,6 +130,12 @@ const Header = () => {
             >
               Quote
             </Link>
+            <Link
+              to="/meetings"
+              className="text-decoration-none text-white hover:text-[#d3e2e1]"
+            >
+              Meetings
+            </Link>
             {!token ? (
               <>
                 <Link
@@ -216,6 +222,13 @@ const Header = () => {
             className="text-decoration-none block text-[#1976D2]"
           >
             Quote
+          </Link>
+          <Link
+            to="/meetings"
+            onClick={toggleMobileMenu}
+            className="text-decoration-none block text-[#1976D2]"
+          >
+            Meetings
           </Link>
           {!token ? (
             <>

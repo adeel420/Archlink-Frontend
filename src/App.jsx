@@ -22,6 +22,7 @@ import Admin_Dashboard from "./pages/Admin_Dashboard";
 import Reset_Password from "./pages/Reset-Password";
 import ScrollToTop from "./components/ScrollToTop";
 import Quote from "./pages/Quote";
+import Meetings from "./pages/Meetings";
 
 function App() {
   const location = useLocation();
@@ -70,6 +71,7 @@ function App() {
         <Route path="/verify-email" element={<Verify_Email />} />
         <Route path="/dashboard" element={<Admin_Dashboard />} />
         <Route path="/quote" element={<Quote />} />
+        <Route path="/meetings" element={<Meetings />} />
       </Routes>
       {!hideFooter && <Footer />}
       <Toaster />
