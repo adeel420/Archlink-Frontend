@@ -196,7 +196,7 @@ const Contact = () => {
           {/* Map */}
           <div className="bg-white p-4 rounded-2xl shadow-md overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.508651021954!2d74.30691007423522!3d31.592519343576395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191c82d18c2ced%3A0x1aa4688a984fdde1!2sMinar-e-Pakistan!5e0!3m2!1sen!2s!4v1750616459345!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54450.638063074606!2d74.23576220894773!3d31.464650317602295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919015f82b0b86f%3A0x2fcaf9fdeb3d02e6!2sJohar%20Town%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1751291720159!5m2!1sen!2s"
               width="100%"
               height="300"
               style={{ border: 0 }}
