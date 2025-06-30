@@ -1,3 +1,5 @@
+import logo from "./images/logo.png";
+import logo1 from "./images/logo1.jpg";
 import heroImg from "./images/hero-section.png";
 import heroImg1 from "./images/hero-section1.png";
 import ratings from "./images/rating.png";
@@ -17,6 +19,8 @@ import mobileApp from "./images/mobile-app.webp";
 import digitalMarketing from "./images/digital-marketing.webp";
 
 export const assets = {
+  logo,
+  logo1,
   heroImg,
   heroImg1,
   ratings,

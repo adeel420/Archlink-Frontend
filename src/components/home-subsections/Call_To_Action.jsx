@@ -6,9 +6,9 @@ import { Link, useNavigate } from "react-router-dom";
 const Call_To_Action = () => {
   const navigate = useNavigate();
 
-  const phone = "+923209430934";
+  const phone = "923287831517";
   const message = encodeURIComponent("Hello! I'm interested in your services");
-  const url = `https://web.whatsapp.com/${phone}?text=${message}`;
+  const url = `https://wa.me/${phone}?text=${message}`;
   return (
     <div>
       {/* Heading */}
@@ -39,7 +39,6 @@ const Call_To_Action = () => {
             <Link
               to={"/contact"}
               className="bg-white border border-[#2c61ed] text-[#2c61ed] hover:bg-[#2c61ed] hover:text-white transition flex items-center gap-2 px-6 py-3 rounded-full shadow-md cursor-pointer"
-              // onClick={() => navigate("/contact")}
             >
               <FaWpforms size={20} />
               <span className="font-medium">Fill the Contact Form</span>

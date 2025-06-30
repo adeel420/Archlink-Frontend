@@ -6,6 +6,7 @@ import { MdLogout } from "react-icons/md";
 import { Popover } from "antd";
 import { handleSuccess } from "../utils/Utils";
 import axios from "axios";
+import { assets } from "../assets/assets";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -93,14 +94,16 @@ const Header = () => {
     <nav className="fixed top-0 w-full p-2 header shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link
-            to="/"
-            className="flex text-decoration-none items-center gap-2 text-xl font-bold text-white"
-          >
-            Archlink Technology
-          </Link>
-
+          <div className="flex items-center gap-1">
+            {/* Logo */}
+            <img src={assets.logo} className="h-[50px] w-[50px] " />
+            <Link
+              to="/"
+              className="flex text-decoration-none items-center gap-2 text-xl font-bold text-white"
+            >
+              Archlink Technology
+            </Link>
+          </div>
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 items-center">
             <Link
@@ -161,7 +164,6 @@ const Header = () => {
               </Popover>
             )}
           </div>
-
           {/* Mobile Menu Toggle */}
           <div className="md:hidden">
             <button onClick={toggleMobileMenu} className="text-white">

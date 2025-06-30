@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { handleError, handleSuccess } from "../utils/Utils";
 import { ScaleLoader } from "react-spinners";
 import axios from "axios";
+import { TiSocialFacebook } from "react-icons/ti";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -36,9 +37,9 @@ const Contact = () => {
     }
   };
 
-  const phone = "+923209430934";
+  const phone = "923287831517";
   const message = encodeURIComponent("Hello! I'm interested in your services");
-  const url = `https://web.whatsapp.com/${phone}?text=${message}`;
+  const url = `https://wa.me/${phone}?text=${message}`;
   return (
     <div className="container mx-auto px-4 py-24 space-y-16">
       {loading && (
@@ -166,12 +167,29 @@ const Contact = () => {
                 <IoChatbubbleEllipsesOutline size={20} />
                 WhatsApp
               </Link>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
+              <Link
+                to={
+                  "https://www.facebook.com/story.php?story_fbid=122110521050815886&id=61574476603878&rdid=uqtzJZRKgxRxNfuv#"
+                }
+                target="_blank"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex items-center gap-2 shadow"
+              >
                 Facebook
-              </button>
-              <button className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg shadow">
+              </Link>
+              <Link
+                to={"https://www.instagram.com/archlink_technology/"}
+                target="_blank"
+                className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg shadow"
+              >
                 Instagram
-              </button>
+              </Link>
+              <Link
+                to={"https://www.linkedin.com/in/saliha-ilyas-3527a2288/"}
+                target="_blank"
+                className="bg-[#0b66c3] hover:bg-[#085099] text-white px-6 py-3 rounded-lg shadow"
+              >
+                LinkedIn
+              </Link>
             </div>
           </div>
 
