@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ScaleLoader } from "react-spinners";
-import { handleError } from "../utils/Utils";
+import { handleError, handleSuccess } from "../utils/Utils";
+import axios from "axios";
 
 const Meetings = () => {
   const [loading, setLoading] = useState(false);
@@ -16,12 +17,35 @@ const Meetings = () => {
     if (!name || !email || !contact || !subject || !timing || !purpose) {
       return handleError("Please fill all fields");
     }
+    setLoading(true);
+    try {
+      const response = await axios.post(
+        `${import.meta.env.VITE_SERVER_API}/meeting/`,
+        { name, email, contact, subject, timing, purpose },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      handleSuccess("Form submit successfully");
+      setName("");
+      setEmail("");
+      setContact("");
+      setSubject("");
+      setTiming("");
+      setPurpose("");
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="container mx-auto px-4 py-30 space-y-16">
       {loading && (
-        <div className="fixed inset-0 bg-[#0000005a] z-50 flex items-center justify-center">
+        <div className="fixed h-[100%] inset-0 bg-[#0000005a] z-50 flex items-center justify-center">
           <ScaleLoader color="#275ce7" />
         </div>
       )}
@@ -167,7 +191,7 @@ const Meetings = () => {
 
             <button
               type="submit"
-              className="w-full md:w-auto bg-[#2c61ed] hover:bg-[#204bcc] text-white font-medium px-6 py-3 rounded-lg shadow-md transition"
+              className="w-full md:w-auto bg-[#2c61ed] hover:bg-[#204bcc] text-white font-medium px-6 py-3 rounded-lg shadow-md transition cursor-pointer"
             >
               Schedule Meeting
             </button>

@@ -1,6 +1,10 @@
 import { Code, Smartphone, Palette, TrendingUp, Users } from "lucide-react";
 import { LuTarget } from "react-icons/lu";
-import { MdOutlineRemoveRedEye, MdContactMail } from "react-icons/md";
+import {
+  MdOutlineRemoveRedEye,
+  MdContactMail,
+  MdMeetingRoom,
+} from "react-icons/md";
 import { PiMedalFill } from "react-icons/pi";
 import { FaRegClock, FaLocationDot } from "react-icons/fa6";
 import {
@@ -69,14 +73,54 @@ export const missionData = [
 ];
 
 export const portfolioData = [
-  { title: "Ecommerce", service: "Web Development" },
-  { title: "Doctor Appointment", service: "Web Development" },
-  { title: "News App", service: "Web Development" },
-  { title: "Twitter Clone", service: "Web Development" },
-  { title: "Blog App", service: "Web Development" },
-  { title: "Health Care App", service: "Mobile App" },
-  { title: "SaaS Dashboard", service: "UI/UX Design" },
-  { title: "Branding Project", service: "Digital Marketing" },
+  {
+    title: "Ecommerce",
+    service: "Web Development",
+    img: portfolioAssets.portfolio1,
+    projectLink: "https://mern-stack-ecommerce-frontend-nine.vercel.app/",
+  },
+  {
+    title: "Doctor Appointment",
+    service: "Web Development",
+    img: portfolioAssets.portfolio6,
+    projectLink: "https://doctor-appointment-frontend-tau.vercel.app/",
+  },
+  {
+    title: "Twitter Clone",
+    service: "Web Development",
+    img: portfolioAssets.portfolio3,
+    projectLink: "https://twitter-clone-frontend-nu.vercel.app/",
+  },
+  {
+    title: "Blog App",
+    service: "Web Development",
+    img: portfolioAssets.portfolio4,
+    projectLink: "https://blog-app-frontend-sigma.vercel.app/",
+  },
+  {
+    title: "News App",
+    service: "Web Development",
+    img: portfolioAssets.portfolio5,
+    projectLink: "",
+  },
+  {
+    title: "Health Care App",
+    service: "Mobile App",
+    img: portfolioAssets.portfolio7,
+    projectLink: "",
+  },
+  {
+    title: "SaaS Dashboard",
+    service: "UI/UX Design",
+    img: portfolioAssets.portfolio8,
+    projectLink: "",
+  },
+  {
+    title: "Branding Project",
+    service: "Digital Marketing",
+    img: portfolioAssets.portfolio9,
+    projectLink: "",
+  },
 ];
 
 export const teamMembersData = [
@@ -291,5 +335,6 @@ export const dashboardBtnData = [
   { id: 1, logo: ImBullhorn, text: "Job Applicant Users" },
   { id: 2, logo: ImBullhorn, text: "Quote Users" },
   { id: 3, logo: MdContactMail, text: "Contact Users" },
-  { id: 4, logo: IoIosLogOut, text: "Logout" },
+  { id: 4, logo: MdMeetingRoom, text: "Meetings" },
+  { id: 5, logo: IoIosLogOut, text: "Logout" },
 ];

@@ -6,6 +6,7 @@ import Tab3 from "../components/adminDashboard-subsections/Tab3";
 import Tab4 from "../components/adminDashboard-subsections/Tab4";
 import { useNavigate } from "react-router-dom";
 import { handleSuccess } from "../utils/Utils";
+import Tab5 from "../components/adminDashboard-subsections/Tab5";
 
 const Admin_Dashboard = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -21,7 +22,7 @@ const Admin_Dashboard = () => {
             key={data.id}
             onClick={() => {
               setActiveTab(data.id);
-              if (data.id === 4) {
+              if (data.id === 5) {
                 handleSuccess("Logout Successful");
                 navigate("/");
               }
@@ -56,6 +57,7 @@ const Admin_Dashboard = () => {
         {activeTab === 1 && <Tab2 />}
         {activeTab === 2 && <Tab3 />}
         {activeTab === 3 && <Tab4 />}
+        {activeTab === 4 && <Tab5 />}
       </div>
     </div>
   );
