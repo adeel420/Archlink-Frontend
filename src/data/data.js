@@ -213,8 +213,8 @@ export const servicePageData = [
 
 export const contactData = [
   { logo: FaLocationDot, title: "Address", val: "Lahore, Pakistan" },
-  { logo: FaPhoneAlt, title: "Phone", val: "+92-XXX-XXXXXXX" },
-  { logo: FaEnvelope, title: "Email", val: "contact@yourcompany.com" },
+  { logo: FaPhoneAlt, title: "Phone", val: "+92 328 783 1517" },
+  { logo: FaEnvelope, title: "Email", val: "Archlinktechnology@gmail.com" },
 ];
 
 export const portfolioPageData = [
